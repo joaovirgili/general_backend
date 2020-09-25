@@ -10,7 +10,7 @@
             var socket = io();
 
             socket.on('messages', (msg) => {
-                $('#messages').append(`<li>${msg}>/li>`);
+                $('#messages').append(`<li>${msg}</li>`);
             })
 
             $('form').submit(function (e) {
